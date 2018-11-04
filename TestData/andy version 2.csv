@@ -1,0 +1,263 @@
+RaceNumber,CardNumbers,MembershipNumbers,Name,AgeClass,Club,Country,CourseClass,StartTime,FinishTime,RaceTime,NonCompetitive,Position,Status,Handicap,PenaltyScore,ManualScoreAdjust,FinalScore,HandicapTime,HandicapScore,AwardLevel,SiEntriesIDs,Eligibility,NotUsed3,NotUsed4,NotUsed5,NotUsed6,NotUsed7,NotUsed8,NotUsed9,NotUsed10,E1,,,E2,,,E3,,
+2068431,,,Nina Gannon,,ROCK RUNNERS,,EODE,,,00:26:23,N,1,,,,,,,,,,,,,,,,,,,00:06:55,,1,00:11:13,,4,00:08:15,,4
+307,,,Kyle McGregor,,GARINGAL,,EODE,,,00:27:05,N,2,,,,,,,,,,,,,,,,,,,00:09:19,,2,00:09:49,,3,00:07:57,,3
+315,,,Julia Gannon,,ROCKRUNNERS,,EODE,,,00:27:20,N,3,,,,,,,,,,,,,,,,,,,00:12:52,,3,00:09:31,,1,00:04:57,,1
+309,,,Tui Hammick,,AUSTRALIA,,EODE,,,00:33:55,N,4,,,,,,,,,,,,,,,,,,,00:17:20,,5,00:09:43,,2,00:06:52,,2
+318,,,Bruce Oppenheimer and Family,,AUSTRALIA,,EODE,,,,N,,,,,,,,,,,,,,,,,,,,00:15:56,,4,00:25:17,,5,,,
+305,,,Adam Halmy,,BENNELONG,,EODH,,,00:19:42,N,1,,,,,,,,,,,,,,,,,,,00:06:12,,1,00:06:48,,1,00:06:42,,1
+304,,,Tim Rogers,,BIGFOOT,,EODH,,,00:22:20,N,2,,,,,,,,,,,,,,,,,,,00:06:59,,2,00:08:17,,2,00:07:04,,2
+313,,,Bronet Gannon,,ROCKRUNNERS,,EODH,,,00:31:13,N,3,,,,,,,,,,,,,,,,,,,00:13:15,,5,00:09:54,,3,00:08:04,,3
+306,,,Peter Thomason,,BENNELONG,,EODH,,,00:35:23,N,4,,,,,,,,,,,,,,,,,,,00:11:50,,3,00:13:43,,4,00:09:50,,4
+312,,,Neil Gannon,,ROADRUNNERS,,EODH,,,00:40:29,N,5,,,,,,,,,,,,,,,,,,,00:12:55,,4,00:16:29,,5,00:11:05,,5
+303,,,Nathan Lowe,,GARINGAL,,EODM,,,00:21:07,N,1,,,,,,,,,,,,,,,,,,,00:07:45,,1,00:06:26,,1,00:06:56,,1
+316,,,Lucy Hawthorne,,AUSTRALOPERS,,EODM,,,00:25:52,N,2,,,,,,,,,,,,,,,,,,,00:09:50,,4,00:08:07,,2,00:07:55,,3
+317,,,Natalie Tasker,,AUSTRALIA,,EODM,,,00:27:17,N,3,,,,,,,,,,,,,,,,,,,00:10:08,,6,00:08:23,,3,00:08:46,,4
+310,,,Laurel Gannon,,ROCK RUNNERS,,EODM,,,00:28:15,N,4,,,,,,,,,,,,,,,,,,,00:09:52,,5,00:10:32,,6,00:07:51,,2
+302,,,Lee Lowe,,GARINGAL,,EODM,,,00:29:05,N,5,,,,,,,,,,,,,,,,,,,00:09:47,,3,00:09:33,,5,00:09:45,,6
+311,,,Alex Gannon,,ROCKRUNNERS,,EODM,,,00:29:44,N,6,,,,,,,,,,,,,,,,,,,00:12:18,,7,00:08:32,,4,00:08:54,,5
+308,,,Nick Wilmott,,NIL,,EODM,,,,N,,,,,,,,,,,,,,,,,,,,00:07:55,,2,,,,,,
+14,,,Joshua Blatchford,,Newcastle Orienteering Club,,MA,,,00:17:52,N,1,,,,,,,,,,,,,,,,,,,00:05:47,,1,00:06:13,,3,00:05:52,,3
+216,,,Christian Tingstrom,,Goteborg Majorna OK,,MA,,,00:17:56,N,2,,,,,,,,,,,,,,,,,,,00:06:02,,4,00:06:07,,2,00:05:47,,2
+124,,,Gernot Kerschbaumer,,Austria,,MA,,,00:18:13,N,3,,,,,,,,,,,,,,,,,,,00:05:56,,2,00:06:43,,7,00:05:34,,1
+199,,,David Shepherd,,Red Roos ACT,,MA,,,00:18:38,N,4,,,,,,,,,,,,,,,,,,,00:06:04,,5,00:06:26,,4,00:06:08,,5
+46,,,Aidan Dawson,,Garingal Orienteers,,MA,,,00:18:43,N,5,,,,,,,,,,,,,,,,,,,00:06:40,,13,00:05:53,,1,00:06:10,,6
+67,,,Bill Edwards,,Hutt Valley,,MA,,,00:19:03,N,6,,,,,,,,,,,,,,,,,,,00:06:22,,8,00:06:29,,5,00:06:12,,8
+172,,,Ondrej Pavlu,,Uringa Orienteers,,MA,,,00:19:12,N,7,,,,,,,,,,,,,,,,,,,00:06:14,,6,00:06:43,,7,00:06:15,,10
+187,,,Henrik Rindom Knudsen,,Australopers Orienteering Club,,MA,,,00:19:13,N,8,,,,,,,,,,,,,,,,,,,00:06:18,,7,00:06:33,,6,00:06:22,,12
+148,,,Alex Massey,,Newcastle Orienteering Club,,MA,,,00:19:15,N,9,,,,,,,,,,,,,,,,,,,00:05:58,,3,00:07:07,,13,00:06:10,,6
+253,,,Tobias Karlsmose Svarer,,OK Esbjerg,,MA,,,00:19:20,N,10,,,,,,,,,,,,,,,,,,,00:06:23,,9,00:06:56,,12,00:06:01,,4
+26,,,Andrew Brown,,Big Foot Orienteers,,MA,,,00:20:27,N,11,,,,,,,,,,,,,,,,,,,00:06:39,,12,00:07:28,,18,00:06:20,,11
+213,,,Ricky Thackray,,Bibbulmun Orienteers,,MA,,,00:20:40,N,12,,,,,,,,,,,,,,,,,,,00:06:37,,11,00:06:51,,10,00:07:12,,22
+107,,,Andrew Hill,,Western and Hills Orienteers,,MA,,,00:20:43,N,13,,,,,,,,,,,,,,,,,,,00:06:34,,10,00:07:55,,21,00:06:14,,9
+154,,,Stephen Melhuish,,Parawanga Orienteers ACT,,MA,,,00:20:47,N,14,,,,,,,,,,,,,,,,,,,00:06:54,,14,00:07:24,,16,00:06:29,,14
+103,,,Daniel Hill,,Garingal Orienteers,,MA,,,00:21:10,N,15,,,,,,,,,,,,,,,,,,,00:07:34,,21,00:06:48,,9,00:06:48,,18
+9,,,Greg Barbour,,Big Foot Orienteers,,MA,,,00:21:16,N,16,,,,,,,,,,,,,,,,,,,00:07:49,,27,00:06:52,,11,00:06:35,,15
+231,,,Toby Wilson,,Garingal Orienteers,,MA,,,00:21:20,N,17,,,,,,,,,,,,,,,,,,,00:07:03,,16,00:07:21,,15,00:06:56,,20
+92,,,Patrik Gunnarsson,,Big Foot Orienteers,,MA,,,00:21:21,N,18,,,,,,,,,,,,,,,,,,,00:07:06,,17,00:07:24,,16,00:06:51,,19
+191,,,Mattias Sandqvist,,Vallentuna-Osseby OL,,MA,,,00:21:24,N,19,,,,,,,,,,,,,,,,,,,00:07:40,,22,00:07:16,,14,00:06:28,,13
+42,,,Duncan Currie,,Garingal Orienteers,,MA,,,00:22:31,N,20,,,,,,,,,,,,,,,,,,,00:07:26,,19,00:07:28,,18,00:07:37,,25
+151,,,James McQuillan,,Western and Hills Orienteers,,MA,,,00:22:39,N,21,,,,,,,,,,,,,,,,,,,00:07:07,,18,00:08:47,,30,00:06:45,,16
+159,,,Richard Morris,,Bennelong Northside Orienteers,,MA,,,00:23:04,N,22,,,,,,,,,,,,,,,,,,,00:08:20,,32,00:07:59,,22,00:06:45,,16
+121,,,Alex Kennedy,,Garingal Orienteers,,MA,,,00:23:04,N,22,,,,,,,,,,,,,,,,,,,00:06:56,,15,00:08:40,,28,00:07:28,,24
+228,,,Matt Westwood,,Uringa Orienteers,,MA,,,00:23:29,N,24,,,,,,,,,,,,,,,,,,,00:07:44,,23,00:08:21,,26,00:07:24,,23
+125,,,Istvan Kertesz,,Garingal Orienteers,,MA,,,00:23:43,N,25,,,,,,,,,,,,,,,,,,,00:07:47,,25,00:08:05,,23,00:07:51,,28
+211,,,Justin Stafford,,Newcastle Orienteering Club,,MA,,,00:23:50,N,26,,,,,,,,,,,,,,,,,,,00:07:44,,23,00:08:19,,25,00:07:47,,26
+230,,,Huon Wilson,,Garingal Orienteers,,MA,,,00:24:27,N,27,,,,,,,,,,,,,,,,,,,00:08:10,,31,00:08:27,,27,00:07:50,,27
+197,,,Angus Shedden,,Southern Highlands Occasional,,MA,,,00:24:30,N,28,,,,,,,,,,,,,,,,,,,00:08:08,,30,00:09:25,,39,00:06:57,,21
+110,,,Fedor Iskhakov,,Bennelong Northside Orienteers,,MA,,,00:24:57,N,29,,,,,,,,,,,,,,,,,,,00:07:58,,28,00:08:52,,31,00:08:07,,30
+217,,,Shane Trotter,,Newcastle Orienteering Club,,MA,,,00:25:00,N,30,,,,,,,,,,,,,,,,,,,00:07:48,,26,00:07:52,,20,00:09:20,,45
+120,,,Jamie Kennedy,,Garingal Orienteers,,MA,,,00:25:25,N,31,,,,,,,,,,,,,,,,,,,00:07:58,,28,00:08:58,,33,00:08:29,,35
+208,,,Darren Slattery,,Bennelong Northside Orienteers,,MA,,,00:25:31,N,32,,,,,,,,,,,,,,,,,,,00:08:23,,34,00:08:52,,31,00:08:16,,31
+192,,,Greg Schrago,,none,,MA,,,00:25:39,N,33,,,,,,,,,,,,,,,,,,,00:07:33,,20,00:09:46,,42,00:08:20,,32
+106,,,Tony Hill,,Garingal Orienteers,,MA,,,00:26:26,N,34,,,,,,,,,,,,,,,,,,,00:08:48,,35,00:09:00,,34,00:08:38,,38
+254,,,Erik Raberg,,NONE,,MA,,,00:26:53,N,35,,,,,,,,,,,,,,,,,,,00:09:29,,40,00:09:24,,38,00:08:00,,29
+257,,,Daniel Leibundgut,,OLV HINDELBANK,,MA,,,00:27:02,N,36,,,,,,,,,,,,,,,,,,,00:08:50,,36,00:09:39,,41,00:08:33,,37
+226,,,Michael Weiner,,Uringa Orienteers,,MA,,,00:27:22,N,37,,,,,,,,,,,,,,,,,,,00:10:10,,42,00:08:13,,24,00:08:59,,41
+76,,,Michael Free,,Garingal Orienteers,,MA,,,00:27:24,N,38,,,,,,,,,,,,,,,,,,,00:08:21,,33,00:09:10,,35,00:09:53,,48
+2068432,,,Alice Prudhoe,,CENTRAL COAST ORIENTEERS,,MA,,,00:27:52,N,39,,,,,,,,,,,,,,,,,,,00:10:01,,41,00:09:21,,37,00:08:30,,36
+20,,,David Bray,,Garingal Orienteers,,MA,,,00:27:52,N,39,,,,,,,,,,,,,,,,,,,00:09:03,,37,00:09:33,,40,00:09:16,,42
+119,,,Alexander Karavaev,,Illawarra Kareelah Orienteers,,MA,,,00:28:00,N,41,,,,,,,,,,,,,,,,,,,00:09:24,,39,00:09:17,,36,00:09:19,,44
+41,,,Colin Currie,,Garingal Orienteers,,MA,,,00:28:23,N,42,,,,,,,,,,,,,,,,,,,00:10:10,,42,00:09:47,,43,00:08:26,,34
+50,,,Gregory Dominish,,none,,MA,,,00:28:39,N,43,,,,,,,,,,,,,,,,,,,00:11:33,,48,00:08:43,,29,00:08:23,,33
+149,,,Gary McGregor,,ORIENTEERING NSW,,MA,,,00:30:13,N,44,,,,,,,,,,,,,,,,,,,00:11:11,,47,00:10:04,,45,00:08:58,,40
+147,,,Dan Martin,,CENTRAL COAST ORIENTEERS,,MA,,,00:30:46,N,45,,,,,,,,,,,,,,,,,,,00:10:16,,44,00:10:47,,46,00:09:43,,47
+238,,,Ted Woodley,,Garingal Orienteers,,MA,,,00:31:22,N,46,,,,,,,,,,,,,,,,,,,00:10:22,,45,00:11:37,,48,00:09:23,,46
+166,,,Ant Nolan,,Uringa Orienteers,,MA,,,00:32:02,N,47,,,,,,,,,,,,,,,,,,,00:13:18,,52,00:10:02,,44,00:08:42,,39
+232,,,Ian Winn,,Onkaparinga Hills Orienteering,,MA,,,00:33:33,N,48,,,,,,,,,,,,,,,,,,,00:10:27,,46,00:11:49,,50,00:11:17,,51
+190,,,Luke Robertson,,Newcastle Orienteering Club,,MA,,,00:33:49,N,49,,,,,,,,,,,,,,,,,,,00:12:32,,50,00:11:16,,47,00:10:01,,49
+99,,,Neil Hawthorne,,Garingal Orienteers,,MA,,,00:34:41,N,50,,,,,,,,,,,,,,,,,,,00:12:37,,51,00:11:39,,49,00:10:25,,50
+93,,,Matt Hackett,,Western and Hills Orienteers,,MA,,,00:35:53,N,51,,,,,,,,,,,,,,,,,,,00:09:22,,38,00:17:14,,54,00:09:17,,43
+255,,,Peo Bengtsson,,Pan-Kristianstad,,MA,,,00:39:27,N,52,,,,,,,,,,,,,,,,,,,00:12:09,,49,00:15:07,,52,00:12:11,,52
+11,,,Nick Barrable,,SYO - South Yorkshire Orienteers,,MA,,,00:41:19,N,53,,,,,,,,,,,,,,,,,,,00:13:35,,53,00:13:46,,51,00:13:58,,53
+98,,,Barry Hanlon,,Western and Hills Orienteers,,MA,,,00:49:37,N,54,,,,,,,,,,,,,,,,,,,00:15:35,,54,00:16:54,,53,00:17:08,,54
+227,,,Larry Weiss,,Garingal Orienteers,,MA,,,00:55:37,N,55,,,,,,,,,,,,,,,,,,,00:16:57,,55,00:19:22,,55,00:19:18,,55
+105,,,Matthew Hill,,Garingal Orienteers,,MB,,,00:20:30,N,1,,,,,,,,,,,,,,,,,,,00:06:28,,1,00:07:31,,8,00:06:31,,1
+224,,,Tim Wardrop,,Yarra Valley Orienteering Club,,MB,,,00:20:34,N,2,,,,,,,,,,,,,,,,,,,00:07:05,,3,00:06:48,,2,00:06:41,,4
+35,,,Lee Coady,,Western and Hills Orienteers,,MB,,,00:20:34,N,2,,,,,,,,,,,,,,,,,,,00:07:08,,5,00:06:52,,3,00:06:34,,2
+32,,,Michael Burton,,Big Foot Orienteers,,MB,,,00:20:38,N,4,,,,,,,,,,,,,,,,,,,00:07:23,,7,00:06:39,,1,00:06:36,,3
+198,,,Owen Shepherd,,none,,MB,,,00:20:59,N,5,,,,,,,,,,,,,,,,,,,00:06:49,,2,00:07:00,,4,00:07:10,,5
+27,,,Tony Bryant,,Enoggeroos,,MB,,,00:22:04,N,6,,,,,,,,,,,,,,,,,,,00:07:15,,6,00:07:09,,5,00:07:40,,12
+207,,,Andy Simpson,,Big Foot Orienteers,,MB,,,00:22:11,N,7,,,,,,,,,,,,,,,,,,,00:07:29,,8,00:07:21,,7,00:07:21,,8
+33,,,Tony Burton,,Mole Valley,,MB,,,00:22:35,N,8,,,,,,,,,,,,,,,,,,,00:07:43,,10,00:07:33,,11,00:07:19,,7
+178,,,Andrew Power,,Newcastle Orienteering Club,,MB,,,00:23:00,N,9,,,,,,,,,,,,,,,,,,,00:08:02,,14,00:07:31,,8,00:07:27,,9
+135,,,James Lithgow,,Garingal Orienteers,,MB,,,00:23:16,N,10,,,,,,,,,,,,,,,,,,,00:07:49,,11,00:07:31,,8,00:07:56,,15
+145,,,Paul Marsh,,Big Foot Orienteers,,MB,,,00:23:21,N,11,,,,,,,,,,,,,,,,,,,00:07:49,,11,00:07:53,,14,00:07:39,,11
+249,,,Hugh Gingell,,Garingal Orienteers,,MB,,,00:23:38,N,12,,,,,,,,,,,,,,,,,,,00:07:41,,9,00:08:08,,16,00:07:49,,13
+4,,,Peter Annetts,,Garingal Orienteers,,MB,,,00:23:44,N,13,,,,,,,,,,,,,,,,,,,00:08:19,,16,00:07:10,,6,00:08:15,,18
+175,,,Anthony Petterson,,Garingal Orienteers,,MB,,,00:23:57,N,14,,,,,,,,,,,,,,,,,,,00:07:55,,13,00:07:52,,13,00:08:10,,17
+201,,,Mark Shingler,,Big Foot Orienteers,,MB,,,00:24:05,N,15,,,,,,,,,,,,,,,,,,,00:07:05,,3,00:08:39,,22,00:08:21,,19
+132,,,Richard Lauder,,Big Foot Orienteers,,MB,,,00:24:47,N,16,,,,,,,,,,,,,,,,,,,00:08:20,,17,00:08:35,,21,00:07:52,,14
+15,,,Russell Blatchford,,Newcastle Orienteering Club,,MB,,,00:25:10,N,17,,,,,,,,,,,,,,,,,,,00:09:11,,22,00:08:27,,17,00:07:32,,10
+62,,,Anders Edsen,,Aarhus 1900 Orientering,,MB,,,00:25:22,N,18,,,,,,,,,,,,,,,,,,,00:09:37,,27,00:08:30,,19,00:07:15,,6
+177,,,Noah Poland,,Bushflyers ACT,,MB,,,00:25:30,N,19,,,,,,,,,,,,,,,,,,,00:09:22,,26,00:07:47,,12,00:08:21,,19
+188,,,Steven Roberts,,Newcastle Orienteering Club,,MB,,,00:26:08,N,20,,,,,,,,,,,,,,,,,,,00:09:51,,28,00:07:56,,15,00:08:21,,19
+173,,,Wayne Pepper,,Bennelong Northside Orienteers,,MB,,,00:26:14,N,21,,,,,,,,,,,,,,,,,,,00:08:48,,18,00:08:31,,20,00:08:55,,23
+47,,,Nick Dent,,Central Coast Orienteers,,MB,,,00:26:20,N,22,,,,,,,,,,,,,,,,,,,00:09:09,,20,00:08:48,,23,00:08:23,,22
+77,,,Mark Freeman,,Big Foot Orienteers,,MB,,,00:26:34,N,23,,,,,,,,,,,,,,,,,,,00:09:19,,25,00:09:12,,27,00:08:03,,16
+90,,,Donald Grassie,,Moravian Orienteers,,MB,,,00:27:29,N,24,,,,,,,,,,,,,,,,,,,00:09:18,,23,00:08:49,,24,00:09:22,,26
+81,,,Ian Froude,,Illawarra Kareelah Orienteers,,MB,,,00:27:42,N,25,,,,,,,,,,,,,,,,,,,00:09:18,,23,00:09:02,,25,00:09:22,,26
+95,,,Alan Halliday,,Moravian Orienteers,,MB,,,00:28:30,N,26,,,,,,,,,,,,,,,,,,,00:09:53,,29,00:09:05,,26,00:09:32,,29
+180,,,Robert Preston,,Newcastle Orienteering Club,,MB,,,00:29:42,N,27,,,,,,,,,,,,,,,,,,,00:10:31,,31,00:09:59,,32,00:09:12,,25
+251,,,David McGhee,,BENNELONG NORTHSIDE ORIENTEERS,,MB,,,00:29:57,N,28,,,,,,,,,,,,,,,,,,,00:10:51,,32,00:09:55,,31,00:09:11,,24
+59,,,Rod Eckels,,Garingal Orienteers,,MB,,,00:30:20,N,29,,,,,,,,,,,,,,,,,,,00:09:10,,21,00:11:37,,35,00:09:33,,30
+219,,,Pat van Berkel,,HUTT VALLEY,,MB,,,00:30:21,N,30,,,,,,,,,,,,,,,,,,,00:11:06,,33,00:09:37,,30,00:09:38,,31
+10,,,Ross Barr,,Garingal Orienteers,,MB,,,00:32:00,N,31,,,,,,,,,,,,,,,,,,,00:08:09,,15,00:08:29,,18,00:15:22,,41
+246,,,Jose Zapata,,Central Coast Orienteers,,MB,,,00:33:40,N,32,,,,,,,,,,,,,,,,,,,00:08:49,,19,00:09:33,,29,00:15:18,,40
+109,,,Peter Hopper,,Bennelong Northside Orienteers,,MB,,,00:34:03,N,33,,,,,,,,,,,,,,,,,,,00:10:19,,30,00:10:46,,33,00:12:58,,38
+131,,,Rudi Landsiedel,,Newcastle Orienteering Club,,MB,,,00:34:37,N,34,,,,,,,,,,,,,,,,,,,00:12:42,,34,00:11:33,,34,00:10:22,,32
+205,,,Fritz Siegenthaler,,Ulu's Reisewelt,,MB,,,00:36:22,N,35,,,,,,,,,,,,,,,,,,,00:13:07,,37,00:12:00,,36,00:11:15,,36
+113,,,Keith Jay,,Illawarra Kareelah Orienteers,,MB,,,00:36:42,N,36,,,,,,,,,,,,,,,,,,,00:13:00,,36,00:12:36,,40,00:11:06,,35
+85,,,John Giles,,Garingal Orienteers,,MB,,,00:37:03,N,37,,,,,,,,,,,,,,,,,,,00:13:54,,38,00:12:04,,37,00:11:05,,34
+114,,,Shane Jenkins,,Newcastle Orienteering Club,,MB,,,00:38:18,N,38,,,,,,,,,,,,,,,,,,,00:19:43,,41,00:09:13,,28,00:09:22,,26
+215,,,David Tilbrook,,Onkaparinga Hills Orienteering,,MB,,,00:40:02,N,39,,,,,,,,,,,,,,,,,,,00:12:46,,35,00:12:28,,39,00:14:48,,39
+218,,,Russell Tym,,Goldseekers Orienteers,,MB,,,00:42:51,N,40,,,,,,,,,,,,,,,,,,,00:17:59,,40,00:12:11,,38,00:12:41,,37
+185,,,Dan Redfern,,Garingal Orienteers,,MB,,,00:43:01,N,41,,,,,,,,,,,,,,,,,,,00:15:21,,39,00:16:46,,42,00:10:54,,33
+7,,,Narasimha Rao Bandi,,Parawanga Orienteers ACT,,MB,,,00:55:39,N,42,,,,,,,,,,,,,,,,,,,00:20:06,,42,00:14:53,,41,00:20:40,,42
+176,,,David Poland,,Bushflyers ACT,,MC,,,00:22:36,N,1,,,,,,,,,,,,,,,,,,,00:07:24,,8,00:08:51,,5,00:06:21,,1
+138,,,Jim Mackay,,Uringa Orienteers,,MC,,,00:22:51,N,2,,,,,,,,,,,,,,,,,,,00:06:49,,2,00:08:48,,4,00:07:14,,2
+229,,,Gordon Wilson,,Bennelong Northside Orienteers,,MC,,,00:23:04,N,3,,,,,,,,,,,,,,,,,,,00:07:14,,6,00:08:10,,2,00:07:40,,5
+233,,,Andrew Wisniewski,,Big Foot Orienteers,,MC,,,00:23:04,N,3,,,,,,,,,,,,,,,,,,,00:07:06,,5,00:07:42,,1,00:08:16,,9
+223,,,Dale Wallace,,Western Plains Orienteers,,MC,,,00:23:33,N,5,,,,,,,,,,,,,,,,,,,00:07:51,,10,00:08:20,,3,00:07:22,,4
+18,,,Terry Bluett,,Bennelong Northside Orienteers,,MC,,,00:24:04,N,6,,,,,,,,,,,,,,,,,,,00:07:48,,9,00:08:59,,7,00:07:17,,3
+234,,,Murray Withers,,Enoggeroos,,MC,,,00:25:11,N,7,,,,,,,,,,,,,,,,,,,00:07:20,,7,00:08:56,,6,00:08:55,,16
+66,,,Kieran Edwards,,Hutt Valley,,MC,,,00:25:16,N,8,,,,,,,,,,,,,,,,,,,00:06:47,,1,00:10:16,,15,00:08:13,,8
+184,,,Robert Rapkins,,Enoggeroos,,MC,,,00:25:25,N,9,,,,,,,,,,,,,,,,,,,00:07:05,,4,00:09:53,,12,00:08:27,,12
+222,,,Stephan Wagner,,Southern Highlands Occasional,,MC,,,00:25:59,N,10,,,,,,,,,,,,,,,,,,,00:08:12,,13,00:09:01,,8,00:08:46,,14
+158,,,Ian Miller,,Western and Hills Orienteers,,MC,,,00:26:22,N,11,,,,,,,,,,,,,,,,,,,00:08:06,,12,00:10:11,,14,00:08:05,,7
+206,,,Rob Simmons,,Albury-Wodonga Orienteering Club,,MC,,,00:26:26,N,12,,,,,,,,,,,,,,,,,,,00:07:53,,11,00:09:47,,10,00:08:46,,14
+21,,,Mark Brindley,,Garingal Orienteers,,MC,,,00:27:04,N,13,,,,,,,,,,,,,,,,,,,00:08:39,,15,00:10:04,,13,00:08:21,,11
+73,,,Steve Flick,,Bennelong Northside Orienteers,,MC,,,00:28:11,N,14,,,,,,,,,,,,,,,,,,,00:10:19,,20,00:09:52,,11,00:08:00,,6
+152,,,Stuart McWilliam,,Garingal Orienteers,,MC,,,00:29:02,N,15,,,,,,,,,,,,,,,,,,,00:08:53,,16,00:11:14,,18,00:08:55,,16
+171,,,Peter Orr,,Newcastle Orienteering Club,,MC,,,00:29:54,N,16,,,,,,,,,,,,,,,,,,,00:08:16,,14,00:09:39,,9,00:11:59,,28
+97,,,Michael Halmy,,Bennelong Northside Orienteers,,MC,,,00:30:17,N,17,,,,,,,,,,,,,,,,,,,00:06:56,,3,00:13:40,,30,00:09:41,,21
+40,,,Kevin Curby,,Illawarra Kareelah Orienteers,,MC,,,00:30:42,N,18,,,,,,,,,,,,,,,,,,,00:10:50,,23,00:10:35,,16,00:09:17,,19
+37,,,Daniel Copertino,,Clube de Orientacao Rumos e Ro,,MC,,,00:30:59,N,19,,,,,,,,,,,,,,,,,,,00:09:58,,19,00:12:44,,24,00:08:17,,10
+174,,,Johnny Petersen,,Garingal Orienteers,,MC,,,00:31:04,N,20,,,,,,,,,,,,,,,,,,,00:10:53,,24,00:11:09,,17,00:09:02,,18
+118,,,Ron Junghans,,Garingal Orienteers,,MC,,,00:32:52,N,21,,,,,,,,,,,,,,,,,,,00:11:49,,29,00:12:20,,21,00:08:43,,13
+74,,,Jim Forbes,,Garingal Orienteers,,MC,,,00:33:22,N,22,,,,,,,,,,,,,,,,,,,00:11:25,,28,00:11:44,,19,00:10:13,,23
+194,,,Gavin Scott,,Hutt Valley,,MC,,,00:33:26,N,23,,,,,,,,,,,,,,,,,,,00:11:08,,26,00:12:41,,23,00:09:37,,20
+157,,,Peter Meyer,,Southern Highlands Occasional,,MC,,,00:33:46,N,24,,,,,,,,,,,,,,,,,,,00:10:46,,22,00:12:30,,22,00:10:30,,24
+34,,,Brian Cleland,,Uringa Orienteers,,MC,,,00:34:20,N,25,,,,,,,,,,,,,,,,,,,00:10:44,,21,00:12:14,,20,00:11:22,,26
+111,,,Ken Jacobson,,Garingal Orienteers,,MC,,,00:34:22,N,26,,,,,,,,,,,,,,,,,,,00:09:54,,17,00:14:43,,31,00:09:45,,22
+38,,,Tim Cox,,Garingal Orienteers,,MC,,,00:34:47,N,27,,,,,,,,,,,,,,,,,,,00:09:55,,18,00:12:49,,25,00:12:03,,29
+163,,,Terry Murphy,,Uringa Orienteers,,MC,,,00:35:46,N,28,,,,,,,,,,,,,,,,,,,00:11:05,,25,00:13:03,,26,00:11:38,,27
+83,,,Graham Galbraith,,Bennelong Northside Orienteers,,MC,,,00:37:39,N,29,,,,,,,,,,,,,,,,,,,00:12:09,,31,00:13:10,,27,00:12:20,,30
+128,,,Peter Kreminski,,Wallaringa Orienteering Club,,MC,,,00:38:00,N,30,,,,,,,,,,,,,,,,,,,00:11:49,,29,00:15:34,,32,00:10:37,,25
+210,,,Dennis Sparling,,Garingal Orienteers,,MC,,,00:39:21,N,31,,,,,,,,,,,,,,,,,,,00:13:21,,32,00:13:14,,28,00:12:46,,31
+108,,,Ian Holden,,Nelson,,MC,,,00:45:17,N,32,,,,,,,,,,,,,,,,,,,00:13:50,,33,00:18:14,,34,00:13:13,,32
+58,,,Ross Duker,,Garingal Orienteers,,MC,,,00:46:39,N,33,,,,,,,,,,,,,,,,,,,00:16:02,,34,00:16:17,,33,00:14:20,,33
+69,,,Neville Fathers,,Southern Highlands Occasional,,MC,,,00:59:31,N,34,,,,,,,,,,,,,,,,,,,00:19:17,,35,00:22:15,,35,00:17:59,,34
+86,,,Lloyd Gledhill,,Garingal Orienteers,,MC,,,01:09:57,N,35,,,,,,,,,,,,,,,,,,,00:11:10,,27,00:13:28,,29,00:45:19,,35
+202,,,Ewan Shingler,,Big Foot Orienteers,,MD,,,00:19:02,N,1,,,,,,,,,,,,,,,,,,,00:06:10,,1,00:05:56,,1,00:06:56,,3
+123,,,Tom Kennedy,,Garingal Orienteers,,MD,,,00:20:07,N,2,,,,,,,,,,,,,,,,,,,00:07:08,,2,00:06:32,,2,00:06:27,,1
+139,,,Finn Mackay,,Uringa Orienteers,,MD,,,00:20:50,N,3,,,,,,,,,,,,,,,,,,,00:07:31,,3,00:06:37,,3,00:06:42,,2
+252,,,Clyde McGhee,,Bennelong Northside Orienteers,,MD,,,00:23:16,N,4,,,,,,,,,,,,,,,,,,,00:08:47,,5,00:07:29,,5,00:07:00,,4
+242,,,Oscar Woolford,,BUSH N BEACH ORIENTEERING CLUB,,MD,,,00:23:58,N,5,,,,,,,,,,,,,,,,,,,00:09:30,,7,00:06:58,,4,00:07:30,,7
+133,,,Julian Ledger,,Bennelong Northside Orienteers,,MD,,,00:24:20,N,6,,,,,,,,,,,,,,,,,,,00:09:01,,6,00:07:53,,6,00:07:26,,5
+64,,,Oliver Edwards,,Hutt Valley,,MD,,,00:25:26,N,7,,,,,,,,,,,,,,,,,,,00:08:22,,4,00:08:38,,7,00:08:26,,9
+54,,,Jakob Doyle,,Uringa Orienteers,,MD,,,00:28:09,N,8,,,,,,,,,,,,,,,,,,,00:10:35,,8,00:09:43,,10,00:07:51,,8
+88,,,Keith Goode,,Big Foot Orienteers,,MD,,,00:35:40,N,9,,,,,,,,,,,,,,,,,,,00:15:58,,12,00:09:38,,9,00:10:04,,10
+244,,,Brian Yates,,Edinburgh South Orienteering,,MD,,,00:50:54,N,10,,,,,,,,,,,,,,,,,,,00:15:55,,11,00:17:16,,11,00:17:43,,11
+179,,,Oscar Power,,Newcastle Orienteering Club,,MD,,,,N,,,,,,,,,,,,,,,,,,,,,,,00:09:00,,8,00:07:27,,6
+247,,,Dean Gingell,,Garingal Orienteers,,MD,,,,N,,,,,,,,,,,,,,,,,,,,00:15:49,,10,,,,,,
+136,,,Dene Littler,,Yarra Valley Orienteering Club,,MD,,,,N,,,,,,,,,,,,,,,,,,,,00:12:01,,9,,,,,,
+243,,,Sam Woolford,,Bush n Beach Orienteering Club,,ME,,,00:24:04,N,1,,,,,,,,,,,,,,,,,,,00:05:13,,1,00:10:14,,2,00:08:37,,3
+79,,,Oliver Freeman,,Big Foot Orienteers,,ME,,,00:24:25,N,2,,,,,,,,,,,,,,,,,,,00:06:52,,3,00:09:45,,1,00:07:48,,2
+30,,,Dylan Bryant,,Enoggeroos,,ME,,,00:26:13,N,3,,,,,,,,,,,,,,,,,,,00:06:15,,2,00:14:14,,5,00:05:44,,1
+241,,,Jamie Woolford,,Bush n Beach Orienteering Club,,ME,,,00:33:22,N,4,,,,,,,,,,,,,,,,,,,00:08:26,,4,00:11:32,,3,00:13:24,,5
+221,,,Angus van Schaik,,Garingal Orienteers,,ME,,,00:35:44,N,5,,,,,,,,,,,,,,,,,,,00:10:12,,5,00:14:08,,4,00:11:24,,4
+31,,,Miles Bryant,,Enoggeroos,,Novice,,,00:31:32,N,1,,,,,,,,,,,,,,,,,,,00:08:37,,1,00:14:57,,4,00:07:58,,1
+144,,,Jamie Marsh,,Big Foot Orienteers,,Novice,,,00:31:50,N,2,,,,,,,,,,,,,,,,,,,00:08:54,,2,00:11:26,,2,00:11:30,,4
+29,,,Callum Bryant,,Enoggeroos,,Novice,,,00:34:28,N,3,,,,,,,,,,,,,,,,,,,00:13:28,,5,00:10:33,,1,00:10:27,,3
+36,,,Lachlan Coady,,Western and Hills Orienteers,,Novice,,,00:39:51,N,4,,,,,,,,,,,,,,,,,,,00:12:48,,3,00:17:03,,6,00:10:00,,2
+65,,,Larissa Edwards,,Hutt Valley,,Novice,,,00:43:46,N,5,,,,,,,,,,,,,,,,,,,00:14:39,,6,00:15:26,,5,00:13:41,,7
+8,,,Julia Barbour,,Big Foot Orienteers,,Novice,,,00:45:39,N,6,,,,,,,,,,,,,,,,,,,00:19:10,,9,00:14:31,,3,00:11:58,,5
+168,,,William Nolan,,Uringa Orienteers,,Novice,,,00:50:17,N,7,,,,,,,,,,,,,,,,,,,00:15:56,,7,00:21:33,,8,00:12:48,,6
+167,,,Jonathan Nolan,,Uringa Orienteers,,Novice,,,00:52:13,N,8,,,,,,,,,,,,,,,,,,,00:15:59,,8,00:21:29,,7,00:14:45,,8
+240,,,Alex Woolford,,Bush n Beach Orienteering Club,,Novice,,,,N,,,,,,,,,,,,,,,,,,,,00:13:27,,4,,,,00:19:35,,9
+1,,,Tove Alexandersson,,Swedish WC Team,,WA,,,00:17:54,N,1,,,,,,,,,,,,,,,,,,,00:05:58,,1,00:05:54,,1,00:06:02,,1
+68,,,Viktoria Ernstsson,,Goteborg Majorna OK,,WA,,,00:20:36,N,2,,,,,,,,,,,,,,,,,,,00:07:16,,6,00:06:43,,3,00:06:37,,2
+259,,,Camilie Kriberg Klysner,,FOSSUM IF,,WA,,,00:20:48,N,3,,,,,,,,,,,,,,,,,,,00:06:47,,2,00:07:15,,9,00:06:46,,3
+186,,,Ellen Marie Reinhard,,OLV Langenthal,,WA,,,00:21:06,N,4,,,,,,,,,,,,,,,,,,,00:07:45,,10,00:06:28,,2,00:06:53,,5
+155,,,Tara Melhuish,,Parawanga Orienteers ACT,,WA,,,00:21:13,N,5,,,,,,,,,,,,,,,,,,,00:07:20,,7,00:06:59,,5,00:06:54,,6
+126,,,Signe Klinting,,OK Pan Arhus,,WA,,,00:21:17,N,6,,,,,,,,,,,,,,,,,,,00:07:13,,5,00:07:14,,8,00:06:50,,4
+2,,,Malin Andersson,,OK Nolaskogsarna,,WA,,,00:21:17,N,6,,,,,,,,,,,,,,,,,,,00:07:10,,4,00:06:49,,4,00:07:18,,9
+16,,,Nicola Blatchford,,Newcastle Orienteering Club,,WA,,,00:22:03,N,8,,,,,,,,,,,,,,,,,,,00:07:21,,8,00:07:03,,6,00:07:39,,13
+162,,,Catherine Murphy,,Uringa Orienteers,,WA,,,00:22:58,N,9,,,,,,,,,,,,,,,,,,,00:07:00,,3,00:08:59,,20,00:06:59,,7
+12,,,Camilla Bevensee,,OK Pan Arhus,,WA,,,00:23:06,N,10,,,,,,,,,,,,,,,,,,,00:08:49,,15,00:07:11,,7,00:07:06,,8
+102,,,Barbara Hill,,Garingal Orienteers,,WA,,,00:23:16,N,11,,,,,,,,,,,,,,,,,,,00:08:13,,12,00:07:38,,10,00:07:25,,10
+84,,,Melissa Gangemi,,Yarra Valley Orienteering Club,,WA,,,00:23:40,N,12,,,,,,,,,,,,,,,,,,,00:07:40,,9,00:08:29,,14,00:07:31,,11
+89,,,Lisa Grant,,Garingal Orienteers,,WA,,,00:24:25,N,13,,,,,,,,,,,,,,,,,,,00:07:46,,11,00:09:01,,21,00:07:38,,12
+142,,,Tracy Marsh,,Big Foot Orienteers,,WA,,,00:25:00,N,14,,,,,,,,,,,,,,,,,,,00:09:11,,16,00:07:51,,11,00:07:58,,14
+24,,,Maria Brodin,,Fossum IF,,WA,,,00:25:36,N,15,,,,,,,,,,,,,,,,,,,00:09:21,,17,00:07:54,,12,00:08:21,,16
+96,,,Jane Halliday,,Moravian Orienteers,,WA,,,00:25:51,N,16,,,,,,,,,,,,,,,,,,,00:08:47,,14,00:08:41,,17,00:08:23,,17
+48,,,Phoebe Dent,,Central Coast Orienteers,,WA,,,00:25:57,N,17,,,,,,,,,,,,,,,,,,,00:08:45,,13,00:08:42,,18,00:08:30,,18
+71,,,Natalya Filippova,,Illawarra Kareelah Orienteers,,WA,,,00:27:05,N,18,,,,,,,,,,,,,,,,,,,00:09:23,,18,00:08:43,,19,00:08:59,,23
+209,,,Natasha Sparg,,Bibbulmun Orienteers,,WA,,,00:27:10,N,19,,,,,,,,,,,,,,,,,,,00:09:56,,21,00:08:30,,15,00:08:44,,20
+258,,,Elisabeth Oppliger,,OLV Hindelbank,,WA,,,00:27:20,N,20,,,,,,,,,,,,,,,,,,,00:10:02,,23,00:08:33,,16,00:08:45,,22
+122,,,Tania Kennedy,,Garingal Orienteers,,WA,,,00:28:05,N,21,,,,,,,,,,,,,,,,,,,00:09:56,,21,00:09:08,,25,00:09:01,,24
+301,,,Clare Williams,,BENNELONG,,WA,,,00:28:44,N,22,,,,,,,,,,,,,,,,,,,00:12:32,,27,00:07:55,,13,00:08:17,,15
+25,,,Toni Brown,,Bushflyers ACT,,WA,,,00:28:52,N,23,,,,,,,,,,,,,,,,,,,00:11:06,,26,00:09:05,,23,00:08:41,,19
+256,,,Ulla Engelby,,Pan-Kristianstad,,WA,,,00:29:16,N,24,,,,,,,,,,,,,,,,,,,00:09:32,,19,00:10:02,,26,00:09:42,,27
+134,,,Lisa Linssen,,Garingal Orienteers,,WA,,,00:30:27,N,25,,,,,,,,,,,,,,,,,,,00:12:38,,28,00:09:05,,23,00:08:44,,20
+196,,,Ruth Shedden,,Southern Highlands Occasional,,WA,,,00:31:12,N,26,,,,,,,,,,,,,,,,,,,00:12:53,,29,00:09:03,,22,00:09:16,,25
+189,,,Amylee Robertson,,Newcastle Orienteering Club,,WA,,,00:31:22,N,27,,,,,,,,,,,,,,,,,,,00:10:28,,25,00:11:13,,29,00:09:41,,26
+100,,,Karin Hefftner,,Garingal Orienteers,,WA,,,00:33:33,N,28,,,,,,,,,,,,,,,,,,,00:09:45,,20,00:10:27,,27,00:13:21,,28
+237,,,Hilary Wood,,Central Coast Orienteers,,WA,,,00:37:44,N,29,,,,,,,,,,,,,,,,,,,00:10:16,,24,00:10:41,,28,00:16:47,,29
+60,,,Anne Ekhard Edsen,,Aarhus 1900 Orientering,,WB,,,00:20:15,N,1,,,,,,,,,,,,,,,,,,,00:06:03,,1,00:07:55,,5,00:06:17,,2
+235,,,Gabrielle Withers,,Enoggeroos,,WB,,,00:20:39,N,2,,,,,,,,,,,,,,,,,,,00:06:22,,3,00:07:46,,2,00:06:31,,4
+17,,,Karen Blatchford,,Newcastle Orienteering Club,,WB,,,00:20:42,N,3,,,,,,,,,,,,,,,,,,,00:06:10,,2,00:08:22,,7,00:06:10,,1
+156,,,Zoe Melhuish,,Parawanga Orienteers ACT,,WB,,,00:22:34,N,4,,,,,,,,,,,,,,,,,,,00:08:10,,8,00:07:54,,4,00:06:30,,3
+63,,,Susan Edwards,,Hutt Valley,,WB,,,00:22:49,N,5,,,,,,,,,,,,,,,,,,,00:06:51,,4,00:08:17,,6,00:07:41,,6
+72,,,Anna Fitzgerald,,Goldseekers Orienteers,,WB,,,00:23:30,N,6,,,,,,,,,,,,,,,,,,,00:07:48,,7,00:07:52,,3,00:07:50,,7
+204,,,Paula Shingler,,Big Foot Orienteers,,WB,,,00:24:06,N,7,,,,,,,,,,,,,,,,,,,00:07:08,,5,00:07:32,,1,00:09:26,,15
+51,,,Alitia Dougall,,Bennelong Northside Orienteers,,WB,,,00:25:02,N,8,,,,,,,,,,,,,,,,,,,00:08:12,,9,00:08:56,,9,00:07:54,,8
+137,,,Airdrie Long,,Garingal Orienteers,,WB,,,00:26:36,N,9,,,,,,,,,,,,,,,,,,,00:08:18,,10,00:09:38,,10,00:08:40,,13
+165,,,Janice Nisbet,,Edinburgh South Orienteering,,WB,,,00:26:42,N,10,,,,,,,,,,,,,,,,,,,00:08:35,,13,00:10:01,,12,00:08:06,,9
+195,,,Linda Sesta,,Uringa Orienteers,,WB,,,00:27:06,N,11,,,,,,,,,,,,,,,,,,,00:10:45,,19,00:08:53,,8,00:07:28,,5
+129,,,Sharon Lambert,,Bennelong Northside Orienteers,,WB,,,00:27:13,N,12,,,,,,,,,,,,,,,,,,,00:07:45,,6,00:11:02,,16,00:08:26,,10
+115,,,Caroline Jenkins,,Newcastle Orienteering Club,,WB,,,00:27:35,N,13,,,,,,,,,,,,,,,,,,,00:08:46,,15,00:10:16,,13,00:08:33,,12
+130,,,Lisa Lampe,,Uringa Orienteers,,WB,,,00:27:55,N,14,,,,,,,,,,,,,,,,,,,00:08:36,,14,00:09:53,,11,00:09:26,,15
+49,,,Sally Devenish,,Western Plains Orienteers,,WB,,,00:28:42,N,15,,,,,,,,,,,,,,,,,,,00:09:48,,18,00:10:26,,14,00:08:28,,11
+169,,,Helen O'Callaghan,,Bush n Beach Orienteering Club,,WB,,,00:28:43,N,16,,,,,,,,,,,,,,,,,,,00:08:31,,12,00:10:32,,15,00:09:40,,18
+44,,,Carolyn Davies,,Garingal Orienteers,,WB,,,00:28:52,N,17,,,,,,,,,,,,,,,,,,,00:08:19,,11,00:11:06,,17,00:09:27,,17
+112,,,Carol Jacobson,,Garingal Orienteers,,WB,,,00:30:08,N,18,,,,,,,,,,,,,,,,,,,00:09:26,,17,00:11:27,,18,00:09:15,,14
+45,,,Barbara Dawson,,Garingal Orienteers,,WB,,,00:31:26,N,19,,,,,,,,,,,,,,,,,,,00:09:14,,16,00:12:08,,19,00:10:04,,19
+141,,,Lyn Malmgron,,Southern Highlands Occasional,,WB,,,00:42:05,N,20,,,,,,,,,,,,,,,,,,,00:14:59,,24,00:15:11,,21,00:11:55,,20
+183,,,Lynda Rapkins,,Enoggeroos,,WB,,,00:42:37,N,21,,,,,,,,,,,,,,,,,,,00:11:15,,20,00:14:31,,20,00:16:51,,24
+140,,,Mary Jane Mahony,,Uringa Orienteers,,WB,,,00:43:36,N,22,,,,,,,,,,,,,,,,,,,00:12:39,,21,00:17:35,,23,00:13:22,,21
+91,,,Oonagh Grassie,,Moravian Orienteers,,WB,,,00:45:10,N,23,,,,,,,,,,,,,,,,,,,00:14:33,,23,00:17:12,,22,00:13:25,,22
+117,,,Barbara Junghans,,Garingal Orienteers,,WB,,,00:53:53,N,24,,,,,,,,,,,,,,,,,,,00:15:38,,25,00:22:25,,24,00:15:50,,23
+104,,,Joanna Hill,,Garingal Orienteers,,WB,,,,N,,,,,,,,,,,,,,,,,,,,00:14:26,,22,,,,,,
+245,,,Melinda Ymsen,,Austria,,WC,,,00:21:23,N,1,,,,,,,,,,,,,,,,,,,00:07:40,,1,00:06:56,,4,00:06:47,,3
+55,,,Maree Doyle,,Uringa Orienteers,,WC,,,00:21:53,N,2,,,,,,,,,,,,,,,,,,,00:08:24,,2,00:06:56,,4,00:06:33,,2
+3,,,Melissa Annetts,,Garingal Orienteers,,WC,,,00:22:11,N,3,,,,,,,,,,,,,,,,,,,00:09:23,,6,00:06:18,,1,00:06:30,,1
+43,,,Ellen Currie,,Garingal Orienteers,,WC,,,00:22:14,N,4,,,,,,,,,,,,,,,,,,,00:08:37,,5,00:06:25,,2,00:07:12,,4
+82,,,Salme Fuller,,Illawarra Kareelah Orienteers,,WC,,,00:23:12,N,5,,,,,,,,,,,,,,,,,,,00:08:30,,3,00:07:09,,6,00:07:33,,6
+127,,,Simone Krauss,,Yarra Valley Orienteering Club,,WC,,,00:25:51,N,6,,,,,,,,,,,,,,,,,,,00:09:29,,7,00:07:54,,7,00:08:28,,10
+52,,,Serena Doyle,,Uringa Orienteers,,WC,,,00:27:25,N,7,,,,,,,,,,,,,,,,,,,00:13:07,,16,00:06:48,,3,00:07:30,,5
+23,,,Monica Brockmyre,,none,,WC,,,00:27:53,N,8,,,,,,,,,,,,,,,,,,,00:08:34,,4,00:08:41,,9,00:10:38,,15
+239,,,Jill Woodruff,,Garingal Orienteers,,WC,,,00:31:11,N,9,,,,,,,,,,,,,,,,,,,00:13:32,,19,00:09:25,,11,00:08:14,,8
+94,,,Regina Haertsch,,Uringa Orienteers,,WC,,,00:32:01,N,10,,,,,,,,,,,,,,,,,,,00:10:19,,8,00:10:38,,18,00:11:04,,18
+53,,,Zara Doyle,,Uringa Orienteers,,WC,,,00:32:17,N,11,,,,,,,,,,,,,,,,,,,00:13:26,,17,00:10:35,,17,00:08:16,,9
+78,,,Vanessa Freeman,,Big Foot Orienteers,,WC,,,00:32:39,N,12,,,,,,,,,,,,,,,,,,,00:12:16,,13,00:10:13,,14,00:10:10,,12
+160,,,Janet Morris,,Western and Hills Orienteers,,WC,,,00:33:09,N,13,,,,,,,,,,,,,,,,,,,00:12:01,,12,00:10:03,,13,00:11:05,,19
+75,,,Toni Frank,,Bibbulmun Orienteers,,WC,,,00:33:10,N,14,,,,,,,,,,,,,,,,,,,00:10:54,,9,00:11:27,,20,00:10:49,,17
+39,,,Bryony Cox,,Garingal Orienteers,,WC,,,00:34:14,N,15,,,,,,,,,,,,,,,,,,,00:11:41,,10,00:11:51,,23,00:10:42,,16
+200,,,Gayle Shepherd,,Uringa Orienteers,,WC,,,00:34:14,N,15,,,,,,,,,,,,,,,,,,,00:11:49,,11,00:09:06,,10,00:13:19,,24
+220,,,Heidi van Schaik,,Garingal Orienteers,,WC,,,00:35:17,N,17,,,,,,,,,,,,,,,,,,,00:13:31,,18,00:10:22,,15,00:11:24,,20
+87,,,Simone Gomes de Lima,,Clube de Orientacao Rumos e Ro,,WC,,,00:35:21,N,18,,,,,,,,,,,,,,,,,,,00:14:47,,20,00:10:42,,19,00:09:52,,11
+6,,,Sue Bament,,Onkaparinga Hills Orienteering,,WC,,,00:36:36,N,19,,,,,,,,,,,,,,,,,,,00:12:35,,14,00:13:27,,24,00:10:34,,14
+170,,,Maria Orr,,Newcastle Orienteering Club,,WC,,,00:37:05,N,20,,,,,,,,,,,,,,,,,,,00:17:20,,22,00:09:35,,12,00:10:10,,12
+70,,,Penelope Field,,Uringa Orienteers,,WC,,,00:40:40,N,21,,,,,,,,,,,,,,,,,,,00:15:50,,21,00:11:42,,22,00:13:08,,23
+214,,,Sue Thomson,,Garingal Orienteers,,WC,,,00:41:40,N,22,,,,,,,,,,,,,,,,,,,00:12:56,,15,00:11:33,,21,00:17:11,,25
+150,,,Connie McNamee,,BIG FOOT ORIENTEERS,,WC,,,00:51:54,N,23,,,,,,,,,,,,,,,,,,,00:18:10,,23,00:21:07,,26,00:12:37,,22
+28,,,Alison Bryant,,Enoggeroos,,WC,,,,N,,,,,,,,,,,,,,,,,,,,,,,00:08:40,,8,00:08:01,,7
+19,,,Cheryl Bluett,,Bennelong Northside Orienteers,,WC,,,,N,,,,,,,,,,,,,,,,,,,,,,,00:17:43,,25,,,
+164,,,Helen Murphy,,Uringa Orienteers,,WC,,,,N,,,,,,,,,,,,,,,,,,,,,,,00:10:28,,16,00:11:25,,21
+236,,,Sharon Withers,,Enoggeroos,,WD,,,00:26:12,N,1,,,,,,,,,,,,,,,,,,,00:08:32,,3,00:09:31,,1,00:08:09,,1
+22,,,Justine Brindley,,Garingal Orienteers,,WD,,,00:30:00,N,2,,,,,,,,,,,,,,,,,,,00:08:46,,4,00:11:59,,2,00:09:15,,3
+203,,,Nea Shingler,,Big Foot Orienteers,,WD,,,00:30:09,N,3,,,,,,,,,,,,,,,,,,,00:07:45,,2,00:13:11,,3,00:09:13,,2
+143,,,Tiia Marsh,,Big Foot Orienteers,,WD,,,00:35:12,N,4,,,,,,,,,,,,,,,,,,,00:07:30,,1,00:15:10,,4,00:12:32,,4
+116,,,Beverley Johnson,,Garingal Orienteers,,WD,,,01:13:36,N,5,,,,,,,,,,,,,,,,,,,00:33:06,,6,00:23:30,,5,00:17:00,,5
+248,,,Michelle Gingell,,Garingal Orienteers,,WD,,,,N,,,,,,,,,,,,,,,,,,,,00:14:10,,5,,,,,,
