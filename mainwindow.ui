@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Multi-Day Results Merge</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="layoutWidget">
@@ -32,7 +32,11 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="day1ResultFile"/>
+      <widget class="QLineEdit" name="day1ResultFile">
+       <property name="placeholderText">
+        <string>Event 1 Result File</string>
+       </property>
+      </widget>
      </item>
      <item row="0" column="2">
       <widget class="QPushButton" name="browseForDay1File">
@@ -49,7 +53,11 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="day2ResultFile"/>
+      <widget class="QLineEdit" name="day2ResultFile">
+       <property name="placeholderText">
+        <string>Event 2 Result File</string>
+       </property>
+      </widget>
      </item>
      <item row="1" column="2">
       <widget class="QPushButton" name="browseForDay2File">
@@ -66,7 +74,11 @@
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="day3ResultFile"/>
+      <widget class="QLineEdit" name="day3ResultFile">
+       <property name="placeholderText">
+        <string>Event 3 Result File</string>
+       </property>
+      </widget>
      </item>
      <item row="2" column="2">
       <widget class="QPushButton" name="browseForDay3File">
@@ -83,7 +95,11 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLineEdit" name="day4ResultFile"/>
+      <widget class="QLineEdit" name="day4ResultFile">
+       <property name="placeholderText">
+        <string>Event 4 Result File</string>
+       </property>
+      </widget>
      </item>
      <item row="3" column="2">
       <widget class="QPushButton" name="browseForDay4File">
@@ -100,7 +116,11 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLineEdit" name="day5ResultFile"/>
+      <widget class="QLineEdit" name="day5ResultFile">
+       <property name="placeholderText">
+        <string>Event 5 Result File</string>
+       </property>
+      </widget>
      </item>
      <item row="4" column="2" rowspan="2">
       <widget class="QPushButton" name="browseForDay5File">
@@ -186,6 +206,19 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSettings">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Event Names</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

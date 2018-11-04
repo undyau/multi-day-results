@@ -6,6 +6,7 @@
 #include <QSettings>
 #include <QFile>
 #include <QTextStream>
+#include "eventnames.h"
 
 
 
@@ -36,11 +37,14 @@ private slots:
     void on_browseForDay5File_clicked();
     void on_browseForOutputFile_clicked();
 
+    void on_pushButtonSettings_clicked();
+
 private:
     Ui::MainWindow *ui;
     void Process();
     std::map <QString, CClass*>  m_Classes;
     QChar m_Separator;
+    EventNames* m_EventNames;
 
     void SetFile(QSettings &a_Settings, QString a_FileKey, QLineEdit* a_Control);
     void ProcessFile(int a_Day, QString a_File);

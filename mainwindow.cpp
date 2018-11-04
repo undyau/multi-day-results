@@ -10,6 +10,7 @@
 #include "cresult.h"
 #include <QDebug>
 #include <QLineEdit>
+#include "eventnames.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -17,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    m_EventNames = new EventNames(this);
     statusBar()->showMessage(tr("Waiting to process"));
 
     QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "Xmas5DaysResults");
@@ -27,7 +29,8 @@ MainWindow::MainWindow(QWidget *parent) :
     SetFile(settings, "Day4", ui->day4ResultFile);
     SetFile(settings, "Day5", ui->day5ResultFile);
     SetFile(settings, "Output", ui->outputFile);
-
+    m_EventNames->
+QString file = a_Settings.value(a_FileKey).toString();
     settings.endGroup();
 }
 
@@ -68,7 +71,7 @@ void MainWindow::on_processButton_clicked()
 {
     if (ui->outputFile->text().isEmpty())
     {
-        QMessageBox::information(0, "Doh !" , "You must specify an output file");
+        QMessageBox::information(nullptr, "Doh !" , "You must specify an output file");
         ui->outputFile->setFocus();
         return;
     }
@@ -559,3 +562,10 @@ QString MainWindow::NormaliseName(QString a_Name)
     return a_Name;
 }
 
+
+void MainWindow::on_pushButtonSettings_clicked()
+{
+    EventNames* dlg = new EventNames(this);
+    dlg->show();
+
+}

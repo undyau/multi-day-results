@@ -17,13 +17,16 @@ SOURCES += main.cpp\
     cclass.cpp \
     crunner.cpp \
     cresult.cpp \
-    levenshtein.cpp
+    levenshtein.cpp \
+    eventnames.cpp
 
 HEADERS  += mainwindow.h \
     cclass.h \
     crunner.h \
     cresult.h \
-    levenshtein.h
+    levenshtein.h \
+    eventnames.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    eventnames.ui
 
