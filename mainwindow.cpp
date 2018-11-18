@@ -216,7 +216,7 @@ void MainWindow::ProcessOeScoreFile(int a_Day, QTextStream &a_Instream)
 
 void MainWindow::ProcessOrScoreFile(int a_Day, QTextStream &a_Instream)
 {
-  //  qDebug() << "Enter MainWindow::ProcessOrScoreFile";
+    qDebug() << "Enter MainWindow::ProcessOrScoreFile";
     while (!a_Instream.atEnd())
     {
         QString line = a_Instream.readLine();
@@ -245,6 +245,8 @@ QStringList MainWindow::SplitQuoted(QString a_Line)
         if (a_Line.at(i) == "\"")
         {
             inside = !inside;
+            if (i == a_Line.size() -1)
+                csvlist.append(temp);
             continue;
         }
         if (!inside)
@@ -252,6 +254,7 @@ QStringList MainWindow::SplitQuoted(QString a_Line)
             if(a_Line.at(i) == m_Separator)
             {
                 csvlist.append(temp);
+                qDebug() << csvlist.size() << temp;
                 temp.clear();
             }
             else
@@ -261,6 +264,8 @@ QStringList MainWindow::SplitQuoted(QString a_Line)
                     csvlist.append(temp);
             }
         }
+        else
+            temp += a_Line.at(i);
 
     }
 
@@ -299,15 +304,15 @@ void MainWindow::ProcessResult(int a_Day, QString a_Line, int a_NameCol, int a_N
     QString name = fields[a_NameCol];
     if (a_Name2Col > 0)
         name += " " + fields[a_Name2Col];
+    qDebug() << a_Line;
 
     CClass* oClass = nullptr;
     QString className(fields[a_ClassCol]);
-//    qDebug() << "Processing class " << className << "size" << className.size();
     if (className.size() == 2 && className.at(0) == 'M')
         className = "Men " + className.mid(1,1);
     if (className.size() == 2 && className.at(0) == 'W')
         className = "Women " + className.mid(1,1);
-//qDebug() << "Class now called " << className;
+
     for (auto i = m_Classes.begin(); i != m_Classes.end(); i++)
         if (NormaliseName(i->second->Name()) == NormaliseName(className))
             oClass = i->second;
@@ -318,7 +323,6 @@ void MainWindow::ProcessResult(int a_Day, QString a_Line, int a_NameCol, int a_N
     {
         if (!oClass->GotName(name))
         {
-        //    qDebug() << "No name for " << name;
             QString realName(name);
             if (oClass->FindNearName(realName) > 90)
             {
@@ -327,9 +331,7 @@ void MainWindow::ProcessResult(int a_Day, QString a_Line, int a_NameCol, int a_N
             }
         }
     }
-//    qDebug() << a_Line;
-//    for (auto i = 0; i < fields.size(); i++)
-//        qDebug() << i << fields[i];
+
     CRunner* runner = oClass->AddRunner(name,fields[a_ClubCol]);
     if (a_PositionCol < fields.size() && a_TimePointsCol < fields.size())
         runner->AddResult(a_Day, fields[a_PositionCol], fields[a_TimePointsCol]);
