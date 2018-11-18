@@ -29,8 +29,6 @@ MainWindow::MainWindow(QWidget *parent) :
     SetFile(settings, "Day4", ui->day4ResultFile);
     SetFile(settings, "Day5", ui->day5ResultFile);
     SetFile(settings, "Output", ui->outputFile);
-    m_EventNames->
-QString file = a_Settings.value(a_FileKey).toString();
     settings.endGroup();
 }
 
@@ -377,7 +375,7 @@ void MainWindow::WriteHeaders(QTextStream& a_Stream)
     a_Stream << "</style>" << endl;
     a_Stream << "</head>" << endl;
     a_Stream << "<body>" << endl;
-    a_Stream << "<H1>Christmas 5 Days 2014 - Who's been good ?</h1>";
+    a_Stream << "<H1>"<< m_EventNames->OverallName() << " - Who's been good ?</h1>";
 }
 
 QString MainWindow::ClassLabelName(QString a_Name)
@@ -420,11 +418,11 @@ void MainWindow::WriteTableHeaders(QTextStream& a_Stream)
     a_Stream << "<th>Name</th>"<< endl;
     a_Stream << "<th>Club</th>"<< endl;
   //  a_Stream << "<th>Class</th>"<< endl;
-    a_Stream << "<th class=\"centre stage\">Georges Heights</th>"<< endl;
-    a_Stream << "<th class=\"centre stage\">Cockatoo Island</th>"<< endl;
-    a_Stream << "<th class=\"centre stage\">Pyrmont</th>"<< endl;
-    a_Stream << "<th class=\"centre stage\">Darks Common</th>"<< endl;
-    a_Stream << "<th class=\"centre stage\">Centennial Park</th>"<< endl;
+    a_Stream << "<th class=\"centre stage\">" << m_EventNames->Event1Name()<<"</th>"<< endl;
+    a_Stream << "<th class=\"centre stage\">" << m_EventNames->Event2Name()<<"</th>"<< endl;
+    a_Stream << "<th class=\"centre stage\">" << m_EventNames->Event3Name()<<"</th>"<< endl;
+    a_Stream << "<th class=\"centre stage\">" << m_EventNames->Event4Name()<<"</th>"<< endl;
+    a_Stream << "<th class=\"centre stage\">" << m_EventNames->Event5Name()<<"</th>"<< endl;
     a_Stream << "<th>Total</th>"<< endl;
     a_Stream << "</tr>"<< endl;
 }
