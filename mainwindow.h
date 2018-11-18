@@ -51,7 +51,10 @@ private:
     void ProcessAutodownloadFile(int a_Day, QTextStream& in);
     void ProcessOeFile(int a_Day, QTextStream& in);
     void ProcessOeScoreFile(int a_Day, QTextStream& in);
+    void ProcessOrScoreFile(int a_Day, QTextStream &a_Instream);
+    void ProcessOe2013File(int a_Day, QTextStream &a_Instream, QStringList a_Fields);
     void ProcessResult(int a_Day, QString a_Line, int a_NameCol, int a_Name2Col, int a_ClubCol, int a_ClassCol, int a_TimePointsCol, int a_PositionCol);
+    void ProcessResult(int a_Day, QString a_Line, QStringList a_Fields, QString a_NameCol, QString a_Name2Col, QString a_ClubCol, QString a_ClassCol, QString a_TimePosCol, QString a_PositionCol);
     void AddMissingResults();
     void WriteResults();
     void WriteHeaders(QTextStream &a_Stream);
@@ -64,6 +67,9 @@ private:
     QString Menu();
     int m_MaxNameLen;
     int m_MaxClubLen;
+
+
+    int FindField(const QString &a_Target, const QStringList &a_FieldList) const;
 
 };
 

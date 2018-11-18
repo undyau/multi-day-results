@@ -173,10 +173,14 @@ void MainWindow::ProcessFile(int a_Day, QString a_File)
 
     if (fields[0] == "RaceNumber")
         ProcessAutodownloadFile(a_Day, in);
+    if (fields[0] == "OE0013")
+        ProcessOe2013File(a_Day, in, fields);
     else if (fields[1] == "Stno")
         ProcessOeFile(a_Day, in);
-    else if (fields[0] == "Stno")
+    else if (fields[0] == "OESco0012")
         ProcessOeScoreFile(a_Day, in);
+    else if (fields[0] == "Stno")
+        ProcessOrScoreFile(a_Day, in);
     else
         QMessageBox::information(nullptr, "Unrecognised file" , "Can't identify results format of " + a_File);
 
@@ -210,6 +214,26 @@ void MainWindow::ProcessOeScoreFile(int a_Day, QTextStream &a_Instream)
     }
 }
 
+void MainWindow::ProcessOrScoreFile(int a_Day, QTextStream &a_Instream)
+{
+  //  qDebug() << "Enter MainWindow::ProcessOrScoreFile";
+    while (!a_Instream.atEnd())
+    {
+        QString line = a_Instream.readLine();
+        ProcessResult(a_Day, line,4,3,15,18,20,43);
+    }
+}
+
+void MainWindow::ProcessOe2013File(int a_Day, QTextStream &a_Instream, QStringList a_Fields)
+{
+    while (!a_Instream.atEnd())
+    {
+        QString line = a_Instream.readLine();
+        //qDebug() << "Starting" << line;
+        ProcessResult(a_Day, line, a_Fields, "First name", "Surname", "City","Short","Total","Place");
+        //qDebug() << "Ending" << line;
+    }
+}
 
 QStringList MainWindow::SplitQuoted(QString a_Line)
 {
@@ -223,16 +247,48 @@ QStringList MainWindow::SplitQuoted(QString a_Line)
             inside = !inside;
             continue;
         }
-        if (!inside && (a_Line.at(i) == m_Separator || i == a_Line.size() -1))
+        if (!inside)
         {
-            csvlist.append(temp);
-            temp.clear();
+            if(a_Line.at(i) == m_Separator)
+            {
+                csvlist.append(temp);
+                temp.clear();
+            }
+            else
+            {
+                temp += a_Line.at(i);
+                if (i == a_Line.size() -1)
+                    csvlist.append(temp);
+            }
         }
-        else
-            temp += a_Line.at(i);
+
     }
 
     return csvlist;
+}
+
+int MainWindow::FindField(const QString& a_Target, const QStringList& a_FieldList) const
+{
+    int i = 0;
+    for (QStringList::const_iterator it = a_FieldList.begin();
+         it != a_FieldList.end(); ++it)
+        {
+        if (*it == a_Target)
+            return i;
+        i++;
+        }
+    return 0;
+}
+
+void MainWindow::ProcessResult(int a_Day, QString a_Line, QStringList a_Fields, QString a_NameCol, QString  a_Name2Col, QString  a_ClubCol, QString  a_ClassCol, QString  a_TimePosCol, QString  a_PositionCol)
+{
+  ProcessResult(a_Day, a_Line,
+                FindField(a_NameCol, a_Fields),
+                FindField(a_Name2Col, a_Fields),
+                FindField(a_ClubCol, a_Fields),
+                FindField(a_ClassCol, a_Fields),
+                FindField(a_TimePosCol, a_Fields),
+                FindField(a_PositionCol, a_Fields));
 }
 
 
@@ -271,8 +327,12 @@ void MainWindow::ProcessResult(int a_Day, QString a_Line, int a_NameCol, int a_N
             }
         }
     }
+//    qDebug() << a_Line;
+//    for (auto i = 0; i < fields.size(); i++)
+//        qDebug() << i << fields[i];
     CRunner* runner = oClass->AddRunner(name,fields[a_ClubCol]);
-    runner->AddResult(a_Day, fields[a_PositionCol], fields[a_TimePointsCol]);
+    if (a_PositionCol < fields.size() && a_TimePointsCol < fields.size())
+        runner->AddResult(a_Day, fields[a_PositionCol], fields[a_TimePointsCol]);
 }
 
 void MainWindow::AddMissingResults()
@@ -322,7 +382,7 @@ void MainWindow::WriteHeaders(QTextStream& a_Stream)
     a_Stream << "<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">" << endl;
     a_Stream << "<head>" << endl;
     a_Stream << "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />" << endl;
-    a_Stream << "<title>Christmas 5 Days 2014</title>" << endl;
+    a_Stream << "<title>" << this->m_EventNames->OverallName() << "</title>" << endl;
 
     a_Stream << "<style>" << endl;
     a_Stream << "body {" << endl;
