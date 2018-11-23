@@ -6,6 +6,7 @@
 #include <QSettings>
 #include <QFile>
 #include <QTextStream>
+#include <QFileInfo>
 #include "eventnames.h"
 
 
@@ -45,6 +46,7 @@ private:
     std::map <QString, CClass*>  m_Classes;
     QChar m_Separator;
     EventNames* m_EventNames;
+    QFileInfo m_LastFileInfo;
 
     void SetFile(QSettings &a_Settings, QString a_FileKey, QLineEdit* a_Control);
     void ProcessFile(int a_Day, QString a_File);
@@ -71,6 +73,7 @@ private:
 
     int FindField(const QString &a_Target, const QStringList &a_FieldList) const;
 
+    QString GetProbablePath(QLineEdit *a_Control);
 };
 
 #endif // MAINWINDOW_H

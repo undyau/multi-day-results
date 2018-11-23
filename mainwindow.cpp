@@ -55,15 +55,6 @@ MainWindow::~MainWindow()
     ClearData();
 }
 
-void MainWindow::on_browseForDay1File_clicked()
-{
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 1 data file"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "Result files(*.csv);;All files (* *.*)");
-
-    if (!file.isEmpty())
-        ui->day1ResultFile->setText(file);
-}
-
-
 
 void MainWindow::on_processButton_clicked()
 {
@@ -96,44 +87,86 @@ void MainWindow::Process()
     statusBar()->showMessage(tr("Finished !"));
 }
 
-void MainWindow::on_browseForDay2File_clicked()
+QString MainWindow::GetProbablePath(QLineEdit* a_Control)
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 2 data file"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "Result files(*.csv);;All files (* *.*)");
+    if (!a_Control->text().isEmpty())
+    {
+        QFileInfo fi(a_Control->text());
+        if (fi.exists())
+            return fi.absolutePath();
+    }
+
+    if (m_LastFileInfo.absolutePath().size() > 0)
+        return m_LastFileInfo.absolutePath();
+
+    return QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
+}
+
+void MainWindow::on_browseForDay1File_clicked()
+{
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 1 data file"), GetProbablePath(ui->day1ResultFile), "Result files(*.csv);;All files (* *.*)");
 
     if (!file.isEmpty())
+    {
+        ui->day1ResultFile->setText(file);
+        m_LastFileInfo.setFile(file);
+    }
+}
+
+
+void MainWindow::on_browseForDay2File_clicked()
+{
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 2 data file"), GetProbablePath(ui->day2ResultFile), "Result files(*.csv);;All files (* *.*)");
+
+    if (!file.isEmpty())
+        {
         ui->day2ResultFile->setText(file);
+        m_LastFileInfo.setFile(file);
+        }
 }
 
 void MainWindow::on_browseForDay3File_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 3 data file"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "Result files(*.csv);;All files (* *.*)");
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 3 data file"), GetProbablePath(ui->day3ResultFile), "Result files(*.csv);;All files (* *.*)");
 
     if (!file.isEmpty())
+    {
         ui->day3ResultFile->setText(file);
+        m_LastFileInfo.setFile(file);
+    }
 }
 
 void MainWindow::on_browseForDay4File_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 4 data file"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "Result files(*.csv);;All files (* *.*)");
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 4 data file"), GetProbablePath(ui->day4ResultFile), "Result files(*.csv);;All files (* *.*)");
 
     if (!file.isEmpty())
+    {
         ui->day4ResultFile->setText(file);
+        m_LastFileInfo.setFile(file);
+    }
 }
 
 void MainWindow::on_browseForDay5File_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 5 data file"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "Result files(*.csv);;All files (* *.*)");
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 5 data file"), GetProbablePath(ui->day5ResultFile), "Result files(*.csv);;All files (* *.*)");
 
     if (!file.isEmpty())
+    {
         ui->day5ResultFile->setText(file);
+        m_LastFileInfo.setFile(file);
+    }
 }
 
 void MainWindow::on_browseForOutputFile_clicked()
 {
-    QString file = QFileDialog::getSaveFileName(this,tr("Select output file"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "HTML files(*.htm),Also HTML Files(*.html);;All files (* *.*)");
+    QString file = QFileDialog::getSaveFileName(this,tr("Select output file"), GetProbablePath(ui->outputFile), "HTML files(*.htm),Also HTML Files(*.html);;All files (* *.*)");
 
     if (!file.isEmpty())
+    {
         ui->outputFile->setText(file);
+        m_LastFileInfo.setFile(file);
+    }
 }
 
 void MainWindow::SetFile(QSettings& a_Settings, QString a_FileKey, QLineEdit* a_Control)
@@ -148,7 +181,7 @@ void MainWindow::ProcessFile(int a_Day, QString a_File)
     if (a_File.isEmpty())
         return;
 
-    qDebug() << "Processing " << a_File;
+    //qDebug() << "Processing " << a_File;
     // Read first line of file
     QFile file(a_File);
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -216,7 +249,7 @@ void MainWindow::ProcessOeScoreFile(int a_Day, QTextStream &a_Instream)
 
 void MainWindow::ProcessOrScoreFile(int a_Day, QTextStream &a_Instream)
 {
-    qDebug() << "Enter MainWindow::ProcessOrScoreFile";
+    //qDebug() << "Enter MainWindow::ProcessOrScoreFile";
     while (!a_Instream.atEnd())
     {
         QString line = a_Instream.readLine();
@@ -254,7 +287,7 @@ QStringList MainWindow::SplitQuoted(QString a_Line)
             if(a_Line.at(i) == m_Separator)
             {
                 csvlist.append(temp);
-                qDebug() << csvlist.size() << temp;
+                //qDebug() << csvlist.size() << temp;
                 temp.clear();
             }
             else
@@ -304,7 +337,7 @@ void MainWindow::ProcessResult(int a_Day, QString a_Line, int a_NameCol, int a_N
     QString name = fields[a_NameCol];
     if (a_Name2Col > 0)
         name += " " + fields[a_Name2Col];
-    qDebug() << a_Line;
+    //qDebug() << a_Line;
 
     CClass* oClass = nullptr;
     QString className(fields[a_ClassCol]);
