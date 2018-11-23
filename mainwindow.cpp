@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
     m_EventNames = new EventNames(this);
     statusBar()->showMessage(tr("Waiting to process"));
 
-    QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "Xmas5DaysResults");
+    QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "MultiDayResults");
     settings.beginGroup("Configuration");
     SetFile(settings, "Day1", ui->day1ResultFile);
     SetFile(settings, "Day2", ui->day2ResultFile);
@@ -41,7 +41,7 @@ void MainWindow::ClearData()
 
 MainWindow::~MainWindow()
 {
-    QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "Xmas5DaysResults");
+    QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "MultiDayResults");
     settings.beginGroup("Configuration");
     settings.setValue("Day1", ui->day1ResultFile->text());
     settings.setValue("Day2", ui->day2ResultFile->text());

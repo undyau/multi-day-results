@@ -7,14 +7,14 @@ EventNames::EventNames(QWidget *parent) :
     ui(new Ui::EventNames)
 {
     ui->setupUi(this);
-    QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "Xmas5DaysResults");
+    QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "MultiDayResults");
     settings.beginGroup("Names");
-    SetName(settings, "Overall", ui->lineEditOverall);
-    SetName(settings, "Day1", ui->lineEditEvent1);
-    SetName(settings, "Day2", ui->lineEditEvent2);
-    SetName(settings, "Day3", ui->lineEditEvent3);
-    SetName(settings, "Day4", ui->lineEditEvent4);
-    SetName(settings, "Day5", ui->lineEditEvent5);
+    SetName(settings, "Overall", ui->lineEditOverall, "Xmas 5 Days 2018");
+    SetName(settings, "Day1", ui->lineEditEvent1, "Milsons Point");
+    SetName(settings, "Day2", ui->lineEditEvent2, "Centennial Park");
+    SetName(settings, "Day3", ui->lineEditEvent3, "Beacon Hill");
+    SetName(settings, "Day4", ui->lineEditEvent4, "Manly");
+    SetName(settings, "Day5", ui->lineEditEvent5, "Sydney Uni");
     settings.endGroup();
 }
 
@@ -23,16 +23,18 @@ EventNames::~EventNames()
     delete ui;
 }
 
-void EventNames::SetName(QSettings& a_Settings, QString a_NameKey, QLineEdit* a_Control)
+void EventNames::SetName(QSettings& a_Settings, QString a_NameKey, QLineEdit* a_Control, QString a_Default)
 {
     QString name = a_Settings.value(a_NameKey).toString();
     if (!name.isEmpty())
         a_Control->setText(name);
+    else
+        a_Control->setText(a_Default);
 }
 
 void EventNames::on_buttonBox_accepted()
 {
-    QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "Xmas5DaysResults");
+    QSettings settings(QSettings::IniFormat,  QSettings::UserScope, "undy", "MultiDayResults");
     settings.beginGroup("Names");
     settings.setValue("Overall", ui->lineEditOverall->text());
     settings.setValue("Day1", ui->lineEditEvent1->text());

@@ -29,7 +29,7 @@ private slots:
 
 private:
     Ui::EventNames *ui;
-    void SetName(QSettings &a_Settings, QString a_NameKey, QLineEdit *a_Control);
+    void SetName(QSettings &a_Settings, QString a_NameKey, QLineEdit *a_Control, QString a_Default);
 };
 
 #endif // EVENTNAMES_H
