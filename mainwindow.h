@@ -8,6 +8,7 @@
 #include <QTextStream>
 #include <QFileInfo>
 #include "eventnames.h"
+#include <QXmlStreamReader>
 
 
 
@@ -74,6 +75,8 @@ private:
     int FindField(const QString &a_Target, const QStringList &a_FieldList) const;
 
     QString GetProbablePath(QLineEdit *a_Control);
+    void ProcessXML3Result(int a_Day, QString a_Class, QXmlStreamReader& a_Xml);
+    void ProcessXML3File(int a_Day, QString a_Data);
 };
 
 #endif // MAINWINDOW_H

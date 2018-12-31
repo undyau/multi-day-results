@@ -11,6 +11,7 @@
 #include <QDebug>
 #include <QLineEdit>
 #include "eventnames.h"
+#include <QXmlStreamReader>
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -104,7 +105,7 @@ QString MainWindow::GetProbablePath(QLineEdit* a_Control)
 
 void MainWindow::on_browseForDay1File_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 1 data file"), GetProbablePath(ui->day1ResultFile), "Result files(*.csv);;All files (* *.*)");
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 1 data file"), GetProbablePath(ui->day1ResultFile), "OE Result files(*.csv);;IOF v3 Result files(*.xml);;All files (* *.*)");
 
     if (!file.isEmpty())
     {
@@ -116,7 +117,7 @@ void MainWindow::on_browseForDay1File_clicked()
 
 void MainWindow::on_browseForDay2File_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 2 data file"), GetProbablePath(ui->day2ResultFile), "Result files(*.csv);;All files (* *.*)");
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 2 data file"), GetProbablePath(ui->day2ResultFile), "OE Result files(*.csv);;IOF v3 Result files(*.xml);;All files (* *.*)");
 
     if (!file.isEmpty())
         {
@@ -127,7 +128,7 @@ void MainWindow::on_browseForDay2File_clicked()
 
 void MainWindow::on_browseForDay3File_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 3 data file"), GetProbablePath(ui->day3ResultFile), "Result files(*.csv);;All files (* *.*)");
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 3 data file"), GetProbablePath(ui->day3ResultFile), "OE Result files(*.csv);;IOF v3 Result files(*.xml);;All files (* *.*)");
 
     if (!file.isEmpty())
     {
@@ -138,7 +139,7 @@ void MainWindow::on_browseForDay3File_clicked()
 
 void MainWindow::on_browseForDay4File_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 4 data file"), GetProbablePath(ui->day4ResultFile), "Result files(*.csv);;All files (* *.*)");
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 4 data file"), GetProbablePath(ui->day4ResultFile), "OE Result files(*.csv);;IOF v3 Result files(*.xml);;All files (* *.*)");
 
     if (!file.isEmpty())
     {
@@ -149,7 +150,7 @@ void MainWindow::on_browseForDay4File_clicked()
 
 void MainWindow::on_browseForDay5File_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 5 data file"), GetProbablePath(ui->day5ResultFile), "Result files(*.csv);;All files (* *.*)");
+    QString file = QFileDialog::getOpenFileName(this,tr("Select Day 5 data file"), GetProbablePath(ui->day5ResultFile), "OE Result files(*.csv);;IOF v3 Result files(*.xml);;All files (* *.*)");
 
     if (!file.isEmpty())
     {
@@ -160,7 +161,7 @@ void MainWindow::on_browseForDay5File_clicked()
 
 void MainWindow::on_browseForOutputFile_clicked()
 {
-    QString file = QFileDialog::getSaveFileName(this,tr("Select output file"), GetProbablePath(ui->outputFile), "HTML files(*.htm),Also HTML Files(*.html);;All files (* *.*)");
+    QString file = QFileDialog::getSaveFileName(this,tr("Select output file"), GetProbablePath(ui->outputFile), "OE Result files(*.csv);;IOF v3 Result files(*.xml);;All files (* *.*)");
 
     if (!file.isEmpty())
     {
@@ -204,9 +205,11 @@ void MainWindow::ProcessFile(int a_Day, QString a_File)
     m_Separator = commaCount > semiCount ? QChar(',') : QChar(';');
     QStringList fields = line.split(m_Separator);
 
-    if (fields[0] == "RaceNumber")
+    if (fields[0].left(5)== "<?xml")
+        ProcessXML3File(a_Day, in.readAll());
+    else if (fields[0] == "RaceNumber")
         ProcessAutodownloadFile(a_Day, in);
-    if (fields[0] == "OE0013")
+    else if (fields[0] == "OE0013")
         ProcessOe2013File(a_Day, in, fields);
     else if (fields[1] == "Stno")
         ProcessOeFile(a_Day, in);
@@ -218,6 +221,36 @@ void MainWindow::ProcessFile(int a_Day, QString a_File)
         QMessageBox::information(nullptr, "Unrecognised file" , "Can't identify results format of " + a_File);
 
     file.close();
+}
+
+void MainWindow::ProcessXML3File(int a_Day, QString a_Data)
+{
+    QXmlStreamReader xml(a_Data);
+    QString className, name, position, club, time;
+    while (!xml.atEnd() && !xml.hasError() && xml.name() != "ClassResult")
+            xml.readNextStartElement();
+    while (!xml.atEnd() && !xml.hasError())
+    {
+        QXmlStreamReader::TokenType token = xml.readNext();
+        /* If token is just StartDocument, we'll go to next.*/
+
+        if(token == QXmlStreamReader::StartElement)
+        {
+            if(xml.name() == "Class")
+            {
+                className = "";
+                continue;
+            }
+            if(xml.name() == "Name")
+            {
+                if (className.isEmpty())
+                    className = xml.readElementText();
+                continue;
+            }
+            if (xml.name() == "PersonResult")
+                ProcessXML3Result(a_Day, className, xml);
+        }
+    }
 }
 
 void MainWindow::ProcessAutodownloadFile(int a_Day, QTextStream &a_InStream)
@@ -316,6 +349,95 @@ int MainWindow::FindField(const QString& a_Target, const QStringList& a_FieldLis
         i++;
         }
     return 0;
+}
+
+void MainWindow::ProcessXML3Result(int a_Day, QString a_Class, QXmlStreamReader& xml)
+{
+    qDebug() << "Entered MainWindow::ProcessXML3Result - " << a_Class;
+    QString name, fname, sname, club, pos, time;
+
+    if(xml.tokenType() != QXmlStreamReader::StartElement &&
+            xml.name() == "PersonResult")
+    {
+        qDebug() << "Error processing PersonResult xml";
+        return;
+    }
+    while (xml.name() != "Person")
+            xml.readNextStartElement();
+    while (xml.name() != "Name")
+            xml.readNextStartElement();
+    while(!(xml.tokenType() == QXmlStreamReader::EndElement &&
+            xml.name() == "Name"))
+    {
+        if(xml.tokenType() == QXmlStreamReader::StartElement)
+        {
+            /* We've found first name. */
+            if(xml.name() == "Family")
+            {
+                sname = xml.readElementText();
+                continue;
+            }
+            if(xml.name() == "Given")
+            {
+                fname = xml.readElementText();
+                continue;
+            }
+        }
+        xml.readNext();
+    }
+    while (xml.name() != "Organisation")
+            xml.readNextStartElement();
+    club = "";
+    while(!(xml.tokenType() == QXmlStreamReader::EndElement &&
+            xml.name() == "Organisation"))
+    {
+        if(xml.tokenType() == QXmlStreamReader::StartElement)
+        {
+            /* We've found first name. */
+            if(xml.name() == "Name")
+            {
+                if (club.isEmpty())
+                    club = xml.readElementText();
+                continue;
+            }
+            if(xml.name() == "ShortName")
+            {
+                club = xml.readElementText();
+                continue;
+            }
+        }
+        xml.readNext();
+    }
+    while (xml.name() != "Result")
+            xml.readNextStartElement();
+    while(!(xml.tokenType() == QXmlStreamReader::EndElement &&
+            xml.name() == "Result"))
+    {
+        if(xml.tokenType() == QXmlStreamReader::StartElement)
+        {
+            /* We've found first name. */
+            if(xml.name() == "Position")
+            {
+                pos = xml.readElementText();
+                continue;
+            }
+            if(xml.name() == "Status")
+            {
+                if (xml.readElementText() != "OK")
+                    pos = "0";
+                continue;
+            }
+            if(xml.name() == "Time")
+            {
+                time = xml.readElementText();
+                continue;
+            }
+        }
+        xml.readNext();
+    }
+
+  QString line = fname + ";" + sname + ";" + club + ";" + a_Class + ";" + time + ";" + pos;
+  ProcessResult(a_Day, line, 0, 1, 2, 3, 4, 5);
 }
 
 void MainWindow::ProcessResult(int a_Day, QString a_Line, QStringList a_Fields, QString a_NameCol, QString  a_Name2Col, QString  a_ClubCol, QString  a_ClassCol, QString  a_TimePosCol, QString  a_PositionCol)
