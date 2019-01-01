@@ -182,7 +182,6 @@ void MainWindow::ProcessFile(int a_Day, QString a_File)
     if (a_File.isEmpty())
         return;
 
-    //qDebug() << "Processing " << a_File;
     // Read first line of file
     QFile file(a_File);
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -205,16 +204,17 @@ void MainWindow::ProcessFile(int a_Day, QString a_File)
     m_Separator = commaCount > semiCount ? QChar(',') : QChar(';');
     QStringList fields = line.split(m_Separator);
 
+    qDebug() << "Processing file" << a_File << fields[0].left(10);
     if (fields[0].left(5)== "<?xml")
         ProcessXML3File(a_Day, in.readAll());
     else if (fields[0] == "RaceNumber")
         ProcessAutodownloadFile(a_Day, in);
     else if (fields[0] == "OE0013")
         ProcessOe2013File(a_Day, in, fields);
+    else if (fields[0] == "OESco0012")
+        ProcessOeScoreFile(a_Day, in, fields);
     else if (fields[1] == "Stno")
         ProcessOeFile(a_Day, in);
-    else if (fields[0] == "OESco0012")
-        ProcessOeScoreFile(a_Day, in);
     else if (fields[0] == "Stno")
         ProcessOrScoreFile(a_Day, in);
     else
@@ -225,16 +225,16 @@ void MainWindow::ProcessFile(int a_Day, QString a_File)
 
 void MainWindow::ProcessXML3File(int a_Day, QString a_Data)
 {
+    qDebug() << "MainWindow::ProcessXML3File";
     QXmlStreamReader xml(a_Data);
     QString className, name, position, club, time;
-    while (!xml.atEnd() && !xml.hasError() && xml.name() != "ClassResult")
-            xml.readNextStartElement();
+
     while (!xml.atEnd() && !xml.hasError())
     {
         QXmlStreamReader::TokenType token = xml.readNext();
         /* If token is just StartDocument, we'll go to next.*/
 
-        if(token == QXmlStreamReader::StartElement)
+        if (token == QXmlStreamReader::StartElement)
         {
             if(xml.name() == "Class")
             {
@@ -248,13 +248,16 @@ void MainWindow::ProcessXML3File(int a_Day, QString a_Data)
                 continue;
             }
             if (xml.name() == "PersonResult")
+            {
                 ProcessXML3Result(a_Day, className, xml);
+            }
         }
     }
 }
 
 void MainWindow::ProcessAutodownloadFile(int a_Day, QTextStream &a_InStream)
 {
+    qDebug() << "MainWindow::ProcessAutodownloadFile";
     while (!a_InStream.atEnd())
     {
         QString line = a_InStream.readLine();
@@ -264,6 +267,7 @@ void MainWindow::ProcessAutodownloadFile(int a_Day, QTextStream &a_InStream)
 
 void MainWindow::ProcessOeFile(int a_Day, QTextStream &a_InStream)
 {
+    qDebug() << "MainWindow::ProcessOeFile";
     while (!a_InStream.atEnd())
     {
         QString line = a_InStream.readLine();
@@ -271,18 +275,19 @@ void MainWindow::ProcessOeFile(int a_Day, QTextStream &a_InStream)
     }
 }
 
-void MainWindow::ProcessOeScoreFile(int a_Day, QTextStream &a_Instream)
+void MainWindow::ProcessOeScoreFile(int a_Day, QTextStream &a_Instream, QStringList a_Fields)
 {
+    qDebug() << "MainWindow::ProcessOeScoreFile";
     while (!a_Instream.atEnd())
     {
         QString line = a_Instream.readLine();
-        ProcessResult(a_Day, line,4,3,14,19,46,45);
+        ProcessResult(a_Day, line, a_Fields, "First name", "Surname", "Cl.name","Short","Score Result","Place");
     }
 }
 
 void MainWindow::ProcessOrScoreFile(int a_Day, QTextStream &a_Instream)
 {
-    //qDebug() << "Enter MainWindow::ProcessOrScoreFile";
+    qDebug() << "MainWindow::ProcessOrScoreFile";
     while (!a_Instream.atEnd())
     {
         QString line = a_Instream.readLine();
@@ -292,12 +297,11 @@ void MainWindow::ProcessOrScoreFile(int a_Day, QTextStream &a_Instream)
 
 void MainWindow::ProcessOe2013File(int a_Day, QTextStream &a_Instream, QStringList a_Fields)
 {
+    qDebug() << "MainWindow::ProcessOe2013File";
     while (!a_Instream.atEnd())
     {
         QString line = a_Instream.readLine();
-        //qDebug() << "Starting" << line;
         ProcessResult(a_Day, line, a_Fields, "First name", "Surname", "City","Short","Total","Place");
-        //qDebug() << "Ending" << line;
     }
 }
 
@@ -320,7 +324,6 @@ QStringList MainWindow::SplitQuoted(QString a_Line)
             if(a_Line.at(i) == m_Separator)
             {
                 csvlist.append(temp);
-                //qDebug() << csvlist.size() << temp;
                 temp.clear();
             }
             else
@@ -353,15 +356,15 @@ int MainWindow::FindField(const QString& a_Target, const QStringList& a_FieldLis
 
 void MainWindow::ProcessXML3Result(int a_Day, QString a_Class, QXmlStreamReader& xml)
 {
-    qDebug() << "Entered MainWindow::ProcessXML3Result - " << a_Class;
     QString name, fname, sname, club, pos, time;
 
-    if(xml.tokenType() != QXmlStreamReader::StartElement &&
-            xml.name() == "PersonResult")
+    if(xml.tokenType() != QXmlStreamReader::StartElement ||
+            xml.name() != "PersonResult")
     {
-        qDebug() << "Error processing PersonResult xml";
+        qDebug() << "Error processing PersonResult xml" << xml.name() << xml.tokenString();
         return;
     }
+
     while (xml.name() != "Person")
             xml.readNextStartElement();
     while (xml.name() != "Name")
@@ -385,29 +388,29 @@ void MainWindow::ProcessXML3Result(int a_Day, QString a_Class, QXmlStreamReader&
         }
         xml.readNext();
     }
-    while (xml.name() != "Organisation")
-            xml.readNextStartElement();
+    xml.readNextStartElement(); // Next element could be Organisation or Result
     club = "";
-    while(!(xml.tokenType() == QXmlStreamReader::EndElement &&
-            xml.name() == "Organisation"))
-    {
-        if(xml.tokenType() == QXmlStreamReader::StartElement)
+    if (xml.name() == "Organisation")
+        while(!(xml.tokenType() == QXmlStreamReader::EndElement &&
+                xml.name() == "Organisation"))
         {
-            /* We've found first name. */
-            if(xml.name() == "Name")
+            if(xml.tokenType() == QXmlStreamReader::StartElement)
             {
-                if (club.isEmpty())
+                /* We've found first name. */
+                if(xml.name() == "Name")
+                {
+                    if (club.isEmpty())
+                        club = xml.readElementText();
+                    continue;
+                }
+                if(xml.name() == "ShortName")
+                {
                     club = xml.readElementText();
-                continue;
+                    continue;
+                }
             }
-            if(xml.name() == "ShortName")
-            {
-                club = xml.readElementText();
-                continue;
-            }
+            xml.readNext();
         }
-        xml.readNext();
-    }
     while (xml.name() != "Result")
             xml.readNextStartElement();
     while(!(xml.tokenType() == QXmlStreamReader::EndElement &&
@@ -459,8 +462,6 @@ void MainWindow::ProcessResult(int a_Day, QString a_Line, int a_NameCol, int a_N
     QString name = fields[a_NameCol];
     if (a_Name2Col > 0)
         name += " " + fields[a_Name2Col];
-    //qDebug() << a_Line;
-
     CClass* oClass = nullptr;
     QString className(fields[a_ClassCol]);
     if (className.size() == 2 && className.at(0) == 'M')

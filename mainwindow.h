@@ -53,7 +53,7 @@ private:
     void ProcessFile(int a_Day, QString a_File);
     void ProcessAutodownloadFile(int a_Day, QTextStream& in);
     void ProcessOeFile(int a_Day, QTextStream& in);
-    void ProcessOeScoreFile(int a_Day, QTextStream& in);
+    void ProcessOeScoreFile(int a_Day, QTextStream& in, QStringList a_Fields);
     void ProcessOrScoreFile(int a_Day, QTextStream &a_Instream);
     void ProcessOe2013File(int a_Day, QTextStream &a_Instream, QStringList a_Fields);
     void ProcessResult(int a_Day, QString a_Line, int a_NameCol, int a_Name2Col, int a_ClubCol, int a_ClassCol, int a_TimePointsCol, int a_PositionCol);
